@@ -2,6 +2,9 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import App from './App.vue'
 import TriviaApp from './components/TriviaApp'
+import Chuck from './components/AppChuck'
+
+import store from './store'
 
 
 Vue.config.productionTip = false
@@ -9,7 +12,8 @@ Vue.use(VueRouter)
 
 const routes = [
   {path: '/', redirect: '/trivia'},
-  {path: '/trivia', component: TriviaApp}
+  {path: '/trivia', component: TriviaApp},
+  {path: '/chuck', component: Chuck}
 ]
 const router = new VueRouter({
   routes,
@@ -18,5 +22,6 @@ const router = new VueRouter({
 
 new Vue({
   router,
+  store,
   render: h => h(App)
 }).$mount('#app')
