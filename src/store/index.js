@@ -1,10 +1,23 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
-import client from './..services/ChuckService'
+
+
+import {ChuckModule} from './ChuckModule';
+import {TriviaModule} from './TriviaModule';
+
+
+
+
 
 Vue.use(Vuex)
 
 const store = new Vuex.Store({
+
+    modules: {
+        ChuckModule,
+        TriviaModule
+    }
+    
 
 })
 

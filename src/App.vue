@@ -2,6 +2,7 @@
   <div id="app">
     <nav class="navbar navbar-light bg-primary">
       <router-link class="navbar-brand" to="/">TriviaApp</router-link>
+      <router-link class="navbar-brand" to="/chuck">ChuckApp</router-link>
     </nav>
     <img alt="Vue logo" src="./assets/logo.png">
     <router-view></router-view>

@@ -2,7 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import App from './App.vue'
 import TriviaApp from './components/TriviaApp'
-import Chuck from './components/AppChuck'
+import ChuckApp from './components/ChuckApp'
 
 import store from './store'
 
@@ -13,7 +13,7 @@ Vue.use(VueRouter)
 const routes = [
   {path: '/', redirect: '/trivia'},
   {path: '/trivia', component: TriviaApp},
-  {path: '/chuck', component: Chuck}
+  {path: '/chuck', component: ChuckApp}
 ]
 const router = new VueRouter({
   routes,
